@@ -11,11 +11,11 @@ const {
 // @route GET api/contacts
 router.route("/").get(getContact);
 
-// @route GET api/contacts/:id
-router.route("/:id").get(getContactById);
-
 // @route POST api/contacts
 router.route("/").post(addContact);
+
+// @route GET api/contacts/:id
+router.route("/:id").get(getContactById);
 
 // @route PUT api/contacts/:id
 router.route("/:id").put(updateContact);
